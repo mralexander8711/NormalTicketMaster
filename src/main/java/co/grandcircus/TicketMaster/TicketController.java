@@ -10,8 +10,9 @@ public class TicketController {
 	
 	
 	@RequestMapping ("/")
-	ModelAndView mav = new ModelAndView("index");
+	public ModelAndView showPerson(){
+	ModelAndView mav = new ModelAndView("index"); 
 	return mav;
-	
+	}
 	
 }
