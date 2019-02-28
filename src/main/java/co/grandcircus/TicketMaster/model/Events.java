@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Event {
+public class Events {
 
 	private String id;
 	@JsonProperty("name")
@@ -15,27 +15,24 @@ public class Event {
 	Dates dates;
 	PriceRanges priceRanges;
 
-	List<Classification> classifications;
+	List<Classifications> classifications;
 
 	@JsonProperty("_embedded")
-	Embeds _embedded;
+	_Embedded _embedded;
 
-	public List<Classification> getClassifications() {
+	public List<Classifications> getClassifications() {
 		return classifications;
 	}
 
-	public void setClassifications(List<Classification> classifications) {
+	public void setClassifications(List<Classifications> classifications) {
 		this.classifications = classifications;
 	}
 
-	public Embeds getEmbed2() {
+	public _Embedded getEmbed2() {
 		return _embedded;
 	}
 
-	
-	
-
-	public void setEmbed2(Embeds embed2) {
+	public void setEmbed2(_Embedded embed2) {
 		this._embedded = embed2;
 	}
 

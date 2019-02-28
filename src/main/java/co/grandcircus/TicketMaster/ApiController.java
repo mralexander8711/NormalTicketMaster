@@ -18,16 +18,16 @@ public class ApiController {
 		ModelAndView mav = new ModelAndView("index");
 		return mav;
 
-
 		/*
 		 * _Embedded shows = apiService.findAllEvents(); return new
 		 * ModelAndView("index", "events", shows);
 		 */
-	
+
 	}
+
 	@RequestMapping("/fav")
 	public ModelAndView favorite() {
-		ModelAndView mav =new ModelAndView("favorite");
+		ModelAndView mav = new ModelAndView("favorite");
 		return mav;
 	}
 }

@@ -7,7 +7,7 @@
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=UTF-8">
 <title>Home</title>
 </head>
 <body>
@@ -53,7 +53,8 @@
 <c:forEach var="show" items="${events }">
 >>>>>>> Stashed changes
 <tr>
-<td>${show }</td>
+<td>${show.name }</td><td>${show.info }</td><td>${show.url}</td>
+
 </tr>
 </c:forEach>
 --%>

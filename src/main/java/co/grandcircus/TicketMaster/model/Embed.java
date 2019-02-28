@@ -4,19 +4,19 @@ import java.util.List;
 
 public class Embed {
 
-	private List<Event> events;
+	private List<Venues> venues;
 
-	public List<Event> getEvents() {
-		return events;
+	public List<Venues> getVenues() {
+		return venues;
 	}
 
-	public void setEvents(List<Event> events) {
-		this.events = events;
+	public void setVenues(List<Venues> venues) {
+		this.venues = venues;
 	}
 
 	@Override
 	public String toString() {
-		return "Embed [events=" + events + "]";
+		return "Embeds [venues=" + venues + "]";
 	}
 
 }
