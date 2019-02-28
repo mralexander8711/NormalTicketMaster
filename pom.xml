@@ -20,6 +20,12 @@
 	</properties>
 
 	<dependencies>
+	<!-- jackson-databind -->
+	<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    
+</dependency>
 	<!-- Added for JSP Rendering -->
 <dependency>
 	<groupId>javax.servlet</groupId>

@@ -12,6 +12,7 @@ HELP.md
 .sts4-cache
 
 src/main/resources/config/application.properties
+src/main/resources/application.properties
 
 ### IntelliJ IDEA ###
 .idea
