@@ -1,12 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" href="style.css" />
-<meta charset="ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Home</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
 
 <c:forEach var="show" items="${events }">
 <tr>
-<td>${show.name }</td><td>${show.genre }</td><td>${show.price }</td>
+<td>${show.name }</td><td></td><td></td>
 </tr>
 </c:forEach>
 

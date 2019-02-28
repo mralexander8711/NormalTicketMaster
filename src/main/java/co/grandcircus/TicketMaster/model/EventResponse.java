@@ -2,21 +2,19 @@ package co.grandcircus.TicketMaster.model;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class EventResponse {
 
-	private List<Event> events;
+	@JsonProperty("_embedded")
+	List<Embed> embed1;
 
-	public List<Event> getEvents() {
-		return events;
+	public List<Embed> getEmbed1() {
+		return embed1;
 	}
 
-	public void setEvents(List<Event> events) {
-		this.events = events;
-	}
-
-	@Override
-	public String toString() {
-		return "EventResponse [events=" + events + "]";
+	public void setEmbed1(List<Embed> embed1) {
+		this.embed1 = embed1;
 	}
 
 }

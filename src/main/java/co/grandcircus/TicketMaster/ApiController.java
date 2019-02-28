@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import co.grandcircus.TicketMaster.model.Event;
+import co.grandcircus.TicketMaster.model.Embed;
 
 @Controller
 public class ApiController {
@@ -18,7 +18,7 @@ public class ApiController {
 	@RequestMapping("/")
 	public ModelAndView home() {
 
-		List<Event> shows = apiService.findAllEvents();
+		List<Embed> shows = apiService.findAllEvents();
 
 		return new ModelAndView("index", "events", shows);
 	}

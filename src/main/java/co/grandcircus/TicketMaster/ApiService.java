@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-import co.grandcircus.TicketMaster.model.Event;
+import co.grandcircus.TicketMaster.model.Embed;
 import co.grandcircus.TicketMaster.model.EventResponse;
 
 @Component
@@ -17,12 +17,12 @@ public class ApiService {
 
 	private RestTemplate restTemp = new RestTemplate();
 
-	public List<Event> findAllEvents() {
+	public List<Embed> findAllEvents() {
 		String url = "https://app.ticketmaster.com/discovery/v2/events.json?apikey=" + myApiKey;
 
 		EventResponse response = restTemp.getForObject(url, EventResponse.class);
 
-		return response.getEvents();
+		return response.getEmbed1();
 	}
 
 }
