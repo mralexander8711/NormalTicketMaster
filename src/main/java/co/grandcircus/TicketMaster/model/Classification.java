@@ -1,15 +1,23 @@
 package co.grandcircus.TicketMaster.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Classification {
 
-	Genre name;
-
-	public Genre getName() {
-		return name;
+	@Override
+	public String toString() {
+		return "Classification [nameGenre=" + nameGenre + "]";
 	}
 
-	public void setName(Genre name) {
-		this.name = name;
+	@JsonProperty("name")
+	Genre nameGenre;
+
+	public Genre getName() {
+		return nameGenre;
+	}
+
+	public void setName(Genre nameGenre) {
+		this.nameGenre = nameGenre;
 	}
 
 }

@@ -6,18 +6,19 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Event {
 
-	private Long id;
+	private String id;
+	@JsonProperty("name")
 	private String name;
 	private String url;
 
-	String info;
-	Dates date;
-	Price maxprice;
+	private String info;
+	Dates dates;
+	PriceRanges priceRanges;
 
 	List<Classification> classifications;
 
 	@JsonProperty("_embedded")
-	Embeds embed2;
+	Embeds _embedded;
 
 	public List<Classification> getClassifications() {
 		return classifications;
@@ -28,18 +29,21 @@ public class Event {
 	}
 
 	public Embeds getEmbed2() {
-		return embed2;
+		return _embedded;
 	}
+
+	
+	
 
 	public void setEmbed2(Embeds embed2) {
-		this.embed2 = embed2;
+		this._embedded = embed2;
 	}
 
-	public Long getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
@@ -47,8 +51,8 @@ public class Event {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setName(String nameEvent) {
+		this.name = nameEvent;
 	}
 
 	public String getUrl() {
@@ -68,19 +72,26 @@ public class Event {
 	}
 
 	public Dates getDate() {
-		return date;
+		return dates;
 	}
 
 	public void setDate(Dates date) {
-		this.date = date;
+		this.dates = date;
 	}
 
-	public Price getMaxprice() {
-		return maxprice;
+	public PriceRanges getMaxprice() {
+		return priceRanges;
 	}
 
-	public void setMaxprice(Price maxprice) {
-		this.maxprice = maxprice;
+	public void setMaxprice(PriceRanges maxprice) {
+		this.priceRanges = maxprice;
+	}
+
+	@Override
+	public String toString() {
+		return "Event [id=" + id + ", name=" + name + ", url=" + url + ", info=" + info + ", dates=" + dates
+				+ ", priceRanges=" + priceRanges + ", classifications=" + classifications + ", _embedded=" + _embedded
+				+ "]";
 	}
 
 }

@@ -7,14 +7,19 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class EventResponse {
 
 	@JsonProperty("_embedded")
-	List<Embed> embed1;
+	Embed _embedded;
 
-	public List<Embed> getEmbed1() {
-		return embed1;
+	public Embed getEmbed() {
+		return _embedded;
 	}
 
-	public void setEmbed1(List<Embed> embed1) {
-		this.embed1 = embed1;
+	public void setEmbed(Embed embed1) {
+		this._embedded = embed1;
+	}
+
+	@Override
+	public String toString() {
+		return "EventResponse [_embedded=" + _embedded + "]";
 	}
 
 }

@@ -1,6 +1,6 @@
 package co.grandcircus.TicketMaster.model;
 
-public class Price {
+public class PriceRanges {
 	private Double max;
 	private Double min;
 	

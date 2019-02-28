@@ -19,9 +19,9 @@
 <th>Name</th><th>Genre</th><th>Price</th>
 </tr>
 
-<c:forEach var="show" items="${events }">
+<c:forEach var="show" items="${events}">
 <tr>
-<td>${show.name }</td><td></td><td></td>
+<td>${show }</td>
 </tr>
 </c:forEach>
 

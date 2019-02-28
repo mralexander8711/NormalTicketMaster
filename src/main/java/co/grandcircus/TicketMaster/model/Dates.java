@@ -11,5 +11,10 @@ public class Dates {
 	public void setStart(Start start) {
 		this.start = start;
 	}
+
+	@Override
+	public String toString() {
+		return "Dates [start=" + start + "]";
+	}
 	
 }

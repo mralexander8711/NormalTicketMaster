@@ -14,4 +14,9 @@ public class Embed {
 		this.events = events;
 	}
 
+	@Override
+	public String toString() {
+		return "Embed [events=" + events + "]";
+	}
+
 }

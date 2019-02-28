@@ -4,14 +4,19 @@ import java.util.List;
 
 public class Embeds {
 
-	private List<Venue> venues;
+	private List<Venues> venues;
 
-	public List<Venue> getVenues() {
+	public List<Venues> getVenues() {
 		return venues;
 	}
 
-	public void setVenues(List<Venue> venues) {
+	public void setVenues(List<Venues> venues) {
 		this.venues = venues;
+	}
+
+	@Override
+	public String toString() {
+		return "Embeds [venues=" + venues + "]";
 	}
 
 }

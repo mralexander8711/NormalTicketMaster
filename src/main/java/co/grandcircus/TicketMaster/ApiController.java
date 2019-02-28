@@ -18,9 +18,11 @@ public class ApiController {
 	@RequestMapping("/")
 	public ModelAndView home() {
 
-		List<Embed> shows = apiService.findAllEvents();
+		Embed shows = apiService.findAllEvents();
+		System.out.println("7");
 
 		return new ModelAndView("index", "events", shows);
+	
 	}
 
 }
