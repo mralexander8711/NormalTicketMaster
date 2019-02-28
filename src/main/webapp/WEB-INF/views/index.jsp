@@ -49,15 +49,15 @@
 <th>Name</th><th>Genre</th><th>Price</th>
 </tr>
 
-<%-- 
+
 <c:forEach var="show" items="${events }">
->>>>>>> Stashed changes
+
 <tr>
 <td>${show.name }</td><td>${show.info }</td><td>${show.url}</td>
 
 </tr>
 </c:forEach>
---%>
+
 </table>
 <!-- BOOTSTRAP -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
