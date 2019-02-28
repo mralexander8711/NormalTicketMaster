@@ -10,7 +10,7 @@
 <title>Home</title>
 </head>
 <body>
-
+<%@include file="partials/header.jsp" %>
 	<h1>ticketmeister</h1>
 
 
