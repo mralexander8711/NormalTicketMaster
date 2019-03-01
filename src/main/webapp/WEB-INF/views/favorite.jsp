@@ -11,10 +11,25 @@
 <title>Your Favorite</title>
 </head>
 <body>
+<div class="container">
 <%@include file="partials/header.jsp" %>
 	<h1>Favorites</h1>
 
-<table>
+<table class="table">
+<thead>
 <tr>
-<th>Name</th>                        <th>Genre</th>  <th>Price</th>
+<th>Name</th><th>Details</th><th>Price</th>
 </tr>
+</thead>
+<tbody>
+
+<c:forEach var="show" items="${events}">
+<tr>
+<td>${show.name}</td>
+</tr>
+
+</c:forEach>
+</tbody>
+
+</table>
+</div>
