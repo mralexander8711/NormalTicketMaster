@@ -13,13 +13,35 @@ public class Events {
 
 	private String info;
 	Dates dates;
-	PriceRanges priceRanges;
+	
+	@JsonProperty("priceRanges")
+	List<PriceRanges> priceRanges;
 
-	List<Classifications> classifications;
+	
+	public List<PriceRanges> getPriceRanges() {
+		return priceRanges;
+	}
+	public void setPriceRanges(List<PriceRanges> priceRanges) {
+		this.priceRanges = priceRanges;
+	}
 
 	@JsonProperty("_embedded")
 	_Embedded _embedded;
+	List<Classifications> classifications;
+	
+	//Added with Venues attempt.
+	List<Venues> venues;
 
+
+	//I believe we need to reach into objects here of type venues list.
+	public List<Venues> getVenues(){
+		return venues;
+	}
+	public void setVenues(List<Venues> venues){
+		this.venues=venues;
+	}
+	
+	
 	public List<Classifications> getClassifications() {
 		return classifications;
 	}
@@ -76,13 +98,7 @@ public class Events {
 		this.dates = date;
 	}
 
-	public PriceRanges getMaxprice() {
-		return priceRanges;
-	}
 
-	public void setMaxprice(PriceRanges maxprice) {
-		this.priceRanges = maxprice;
-	}
 
 	@Override
 	public String toString() {

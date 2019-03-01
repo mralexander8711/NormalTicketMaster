@@ -46,14 +46,15 @@
 
 <table>
 <tr>
-<th>Name</th><th>Genre</th><th>Price</th>
+<th>Name</th><th>Description</th><th>Url</th><th>Price</th>
 </tr>
 
 
 <c:forEach var="show" items="${events }">
 
 <tr>
-<td>${show.name }</td><td>${show.info }</td><td>${show.url}</td>
+	<!-- name -->			<!-- Info /Price for test -->
+<td>${show.name }</td><td>${show.info }</td><td><a href="${show.url}">Link</a></td><td>${show.priceRanges }</td>
 
 </tr>
 </c:forEach>
