@@ -102,9 +102,9 @@ public class Events {
 
 	@Override
 	public String toString() {
-		return "Event [id=" + id + ", name=" + name + ", url=" + url + ", info=" + info + ", dates=" + dates
+		return "Event id=" + id + ", name=" + name + ", url=" + url + ", info=" + info + ", dates=" + dates
 				+ ", priceRanges=" + priceRanges + ", classifications=" + classifications + ", _embedded=" + _embedded
-				+ "]";
+				;
 	}
 
 }

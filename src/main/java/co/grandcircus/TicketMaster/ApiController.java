@@ -19,6 +19,8 @@ public class ApiController {
 	public ModelAndView home() {
 
 		List<Events> shows = apiService.findAllEvents();
+		
+		
 		return new ModelAndView("index", "events", shows);
 
 	}

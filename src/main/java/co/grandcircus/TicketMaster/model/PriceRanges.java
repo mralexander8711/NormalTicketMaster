@@ -20,7 +20,7 @@ public class PriceRanges {
 	}
 	@Override
 	public String toString() {
-		return "PriceRanges [max=" + max + ", min=" + min + "]";
+		return max + "-" + min;
 	}
 	
 }

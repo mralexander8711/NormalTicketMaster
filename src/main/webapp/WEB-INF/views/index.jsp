@@ -54,7 +54,10 @@
 
 <tr>
 	<!-- name -->			<!-- Info /Price for test -->
-<td>${show.name }</td><td>${show.info }</td><td><a href="${show.url}">Link</a></td><td>${show.priceRanges }</td>
+<td>${show.name }</td><td>${show.info }</td><td><a href="${show.url}">Link</a></td><td>
+
+<c:forEach var="price" items="${show.priceRanges }">${price.min }</c:forEach></td>
+
 
 </tr>
 </c:forEach>
