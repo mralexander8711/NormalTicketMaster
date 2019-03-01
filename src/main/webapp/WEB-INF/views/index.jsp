@@ -11,8 +11,9 @@
 <title>Home</title>
 </head>
 <body>
+<div class="container">
 <%@include file="partials/header.jsp" %>
-	<h1>Welcome</h1>
+	<h1 class="display-1">ticketmeister</h1>
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -44,25 +45,36 @@
 
 
 
-<table>
+<table class="table homepage">
+<thead class="thead-dark">
 <tr>
-<th>Name</th><th>Description</th><th>Url</th><th>Price</th>
-</tr>
+<th>Name</th><th>Description</th><th>Url</th><th>Price</th><th>Favorite</th>
 
+</tr>
+</thead>
+<tbody>
 
 <c:forEach var="show" items="${events }">
 
 <tr>
 	<!-- name -->			<!-- Info /Price for test -->
+
 <td>${show.name }</td><td>${show.info }</td><td><a href="${show.url}">Link</a></td><td>
 
-<c:forEach var="price" items="${show.priceRanges }">${price.min }</c:forEach></td>
+<c:forEach var="price" items="${show.priceRanges }">${price.min } - ${price.max}</c:forEach></td>
+
+
+<td>
+<a href="" type="button" class="btn btn-outline-light">FAVE</a>
+</td>
 
 
 </tr>
 </c:forEach>
-
+</tbody>
 </table>
+
+</div>
 <!-- BOOTSTRAP -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
