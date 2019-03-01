@@ -60,11 +60,15 @@
 <tr>
 	<!-- name -->			<!-- Info /Price for test -->
 
+
 <td>${show.name }</td><td>GENRE</td><td><a href="${show.url}" target="_blank">Link</a></td><td>
 
 <c:forEach var="price" items="${show.priceRanges }"><fmt:formatNumber type="currency" value="${price.min } "/>
 &nbsp;-&nbsp;<fmt:formatNumber type="currency" value="${price.max } "/><br></c:forEach></td>
 
+
+
+<td><div id="myDIV" style="display:none">${show.info }</div><button type="button" class="btn btn-link" onclick ="myFunction()">${show.name }</button></td><td>genre</td><td><a href="${show.url}">Link</a></td><td>${show.priceRanges }</td>
 
 <td>
 <a href="" type="button" class="btn btn-outline-light">FAVE</a>
@@ -81,6 +85,8 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
 
 </body>
 </html>

@@ -28,6 +28,7 @@ public class ApiController {
 	@RequestMapping("/fav")
 	public ModelAndView favorite() {
 		ModelAndView mav = new ModelAndView("favorite");
-		return mav;
+		return mav;	
 	}
+	
 }
