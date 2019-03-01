@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
@@ -45,7 +46,7 @@
 
 
 
-<table class="table homepage">
+<table class="table">
 <thead class="thead-dark">
 <tr>
 <th>Name</th><th>Description</th><th>Url</th><th>Price</th><th>Favorite</th>
@@ -59,9 +60,10 @@
 <tr>
 	<!-- name -->			<!-- Info /Price for test -->
 
-<td>${show.name }</td><td>${show.info }</td><td><a href="${show.url}">Link</a></td><td>
+<td>${show.name }</td><td>GENRE</td><td><a href="${show.url}" target="_blank">Link</a></td><td>
 
-<c:forEach var="price" items="${show.priceRanges }">${price.min } - ${price.max}</c:forEach></td>
+<c:forEach var="price" items="${show.priceRanges }"><fmt:formatNumber type="currency" value="${price.min } "/>
+&nbsp;-&nbsp;<fmt:formatNumber type="currency" value="${price.max } "/><br></c:forEach></td>
 
 
 <td>
