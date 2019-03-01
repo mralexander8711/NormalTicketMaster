@@ -60,15 +60,16 @@
 <tr>
 	<!-- name -->			<!-- Info /Price for test -->
 
+<td>
+<div id="myDIV" style="display:none">${show.info }</div>
+<button type="button" class="btn btn-link" onclick ="myFunction()">${show.name }</button>
+</td>
 
-<td>${show.name }</td><td>GENRE</td><td><a href="${show.url}" target="_blank">Link</a></td><td>
+<td>GENRE</td><td><a href="${show.url}" target="_blank">Link</a></td>
 
-<c:forEach var="price" items="${show.priceRanges }"><fmt:formatNumber type="currency" value="${price.min } "/>
+<td><c:forEach var="price" items="${show.priceRanges }"><fmt:formatNumber type="currency" value="${price.min } "/>
 &nbsp;-&nbsp;<fmt:formatNumber type="currency" value="${price.max } "/><br></c:forEach></td>
 
-
-
-<td><div id="myDIV" style="display:none">${show.info }</div><button type="button" class="btn btn-link" onclick ="myFunction()">${show.name }</button></td><td>genre</td><td><a href="${show.url}">Link</a></td><td>${show.priceRanges }</td>
 
 <td>
 <a href="" type="button" class="btn btn-outline-light">FAVE</a>
