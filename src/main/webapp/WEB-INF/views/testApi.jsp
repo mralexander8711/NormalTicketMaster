@@ -67,10 +67,10 @@
 </thead>
 <c:forEach var="show" items="${events }">
 
-<c:forEach var="RENAME" items="${show.RENAME }">
+<c:forEach var="Embedded2" items="${show._embedded }">
 
 <tr>
-<td>${RENAME.RENAME.RENAME}</td>
+<td>${_embedded.Venues.Name}</td>
 
 </tr>
 

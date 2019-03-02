@@ -14,10 +14,20 @@ public class Events {
 	private String info;
 
 	
+	@JsonProperty("_embedded")
+	List<Venues> venues;
+	
+	public List<Venues> getVenues() {
+		return venues;
+	}
+
+	public void setVenues(List<Venues> venues) {
+		this.venues = venues;
+	}
+	
 	@JsonProperty("classifications")
 	List<Classifications> classifications;
-	
-	
+
 	public List<Classifications> getClassifications() {
 		return classifications;
 	}
