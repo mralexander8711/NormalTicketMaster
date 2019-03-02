@@ -2,7 +2,11 @@ package co.grandcircus.TicketMaster.model;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Embedded2 {
+
+@JsonProperty("venues")
 List<Venues> venues;
 
 public List<Venues> getVenues() {

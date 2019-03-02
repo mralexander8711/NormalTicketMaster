@@ -15,7 +15,9 @@ public class Events {
 
 	
 	@JsonProperty("_embedded")
+	Embedded2 embedded2;
 	List<Venues> venues;
+	
 	
 	public List<Venues> getVenues() {
 		return venues;
@@ -24,7 +26,23 @@ public class Events {
 	public void setVenues(List<Venues> venues) {
 		this.venues = venues;
 	}
-	
+
+	public Embedded2 getEmbedded2() {
+		return embedded2;
+	}
+
+	public void setEmbedded2(Embedded2 embedded2) {
+		this.embedded2 = embedded2;
+	}
+
+	public Embedded2 getEmbeded2() {
+		return embedded2;
+	}
+
+	public void setEmbeded2(Embedded2 embeded2) {
+		this.embedded2 = embeded2;
+	}
+
 	@JsonProperty("classifications")
 	List<Classifications> classifications;
 
@@ -59,16 +77,6 @@ public class Events {
 		this.priceRanges = priceRanges;
 	}
 
-	@JsonProperty("_embedded")
-	_Embedded _embedded;
-
-	public _Embedded getEmbed2() {
-		return _embedded;
-	}
-
-	public void setEmbed2(_Embedded embed2) {
-		this._embedded = embed2;
-	}
 
 	public String getId() {
 		return id;
