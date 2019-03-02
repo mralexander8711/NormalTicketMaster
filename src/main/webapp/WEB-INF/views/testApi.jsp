@@ -33,7 +33,7 @@
 </table>
 
   -->
-
+<!-- Code that worked for pulling Genre from the API
 <p>Testing Genre call.</p>
 <table>
 <thead>
@@ -47,6 +47,30 @@
 
 <tr>
 <td>${classifications.genre.name}</td>
+
+</tr>
+
+</c:forEach>
+</c:forEach>
+</table>
+
+</body>
+</html>
+ -->
+ 
+ <p>Testing Venue call.</p>
+<table>
+<thead>
+<tr>
+<th>Venue Test</th>
+</tr>
+</thead>
+<c:forEach var="show" items="${events }">
+
+<c:forEach var="RENAME" items="${show.RENAME }">
+
+<tr>
+<td>${RENAME.RENAME.RENAME}</td>
 
 </tr>
 
