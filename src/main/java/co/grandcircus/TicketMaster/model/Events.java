@@ -13,6 +13,19 @@ public class Events {
 
 	private String info;
 
+	
+	@JsonProperty("classifications")
+	List<Classifications> classifications;
+	
+	
+	public List<Classifications> getClassifications() {
+		return classifications;
+	}
+
+	public void setClassifications(List<Classifications> classifications) {
+		this.classifications = classifications;
+	}
+
 	@JsonProperty("images")
 	List<Images> images;
 	

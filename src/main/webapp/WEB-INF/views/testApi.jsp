@@ -11,7 +11,7 @@
 </head>
 <body>
 
-
+<!-- Code that worked for pulling image links from API
 
 <p>Testing Image call.</p>
 <table>
@@ -29,6 +29,28 @@
 </tr>
 </c:forEach>
 
+</c:forEach>
+</table>
+
+  -->
+
+<p>Testing Genre call.</p>
+<table>
+<thead>
+<tr>
+<th>Genre Test</th>
+</tr>
+</thead>
+<c:forEach var="show" items="${events }">
+
+<c:forEach var="classifications" items="${show.classifications }">
+
+<tr>
+<td>${classifications.genre.name}</td>
+
+</tr>
+
+</c:forEach>
 </c:forEach>
 </table>
 
