@@ -50,7 +50,7 @@
 <table class="table">
 <thead class="thead-dark">
 <tr>
-<th>Name</th><th>Url</th><th>Price</th><th>Favorite</th>
+<th>Name</th><th>Genre</th><th>Link</th><th>Price</th><th>Favorite</th>
 
 </tr>
 </thead>
@@ -65,6 +65,10 @@
 <div id="myDIV" style="display:none">${show.info }</div>
 <button type="button" class="btn btn-link" onclick ="myFunction()">${show.name }</button>
 </td>
+
+<td><c:forEach var="classifications" items="${show.classifications}">
+${classifications.genre.name}
+</c:forEach></td>
 
 
 <td><a href="${show.url}" target="_blank">Link</a></td>
