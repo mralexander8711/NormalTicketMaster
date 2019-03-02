@@ -67,15 +67,13 @@
 </thead>
 <c:forEach var="show" items="${events }">
 
-<c:forEach var="embedded2" items="${show.embedded2 }">
-<c:forEach var="venues" items ="${embedded2.venues }">
+<c:forEach var="venues" items ="${show.embedded2.venues }">
 
 <tr>
 <td>${venues.name}</td>
 
 </tr>
 
-</c:forEach>
 </c:forEach>
 </c:forEach>
 </table>
