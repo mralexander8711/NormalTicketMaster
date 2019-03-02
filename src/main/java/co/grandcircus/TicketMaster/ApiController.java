@@ -19,8 +19,7 @@ public class ApiController {
 	public ModelAndView home() {
 
 		List<Events> shows = apiService.findAllEvents();
-		
-		
+
 		return new ModelAndView("index", "events", shows);
 
 	}
@@ -28,7 +27,7 @@ public class ApiController {
 	@RequestMapping("/fav")
 	public ModelAndView favorite() {
 		ModelAndView mav = new ModelAndView("favorite");
-		return mav;	
+		return mav;
 	}
-	
+
 }

@@ -12,43 +12,20 @@ public class Events {
 	private String url;
 
 	private String info;
-	Dates dates;
-	
+
 	@JsonProperty("priceRanges")
 	List<PriceRanges> priceRanges;
 
-	
 	public List<PriceRanges> getPriceRanges() {
 		return priceRanges;
 	}
+
 	public void setPriceRanges(List<PriceRanges> priceRanges) {
 		this.priceRanges = priceRanges;
 	}
 
 	@JsonProperty("_embedded")
 	_Embedded _embedded;
-	List<Classifications> classifications;
-	
-	//Added with Venues attempt.
-	List<Venues> venues;
-
-
-	//I believe we need to reach into objects here of type venues list.
-	public List<Venues> getVenues(){
-		return venues;
-	}
-	public void setVenues(List<Venues> venues){
-		this.venues=venues;
-	}
-	
-	
-	public List<Classifications> getClassifications() {
-		return classifications;
-	}
-
-	public void setClassifications(List<Classifications> classifications) {
-		this.classifications = classifications;
-	}
 
 	public _Embedded getEmbed2() {
 		return _embedded;
@@ -90,21 +67,9 @@ public class Events {
 		this.info = info;
 	}
 
-	public Dates getDate() {
-		return dates;
-	}
-
-	public void setDate(Dates date) {
-		this.dates = date;
-	}
-
-
-
 	@Override
 	public String toString() {
-		return "Event id=" + id + ", name=" + name + ", url=" + url + ", info=" + info + ", dates=" + dates
-				+ ", priceRanges=" + priceRanges + ", classifications=" + classifications + ", _embedded=" + _embedded
-				;
+		return "Event id=" + id + ", name=" + name + ", url=" + url + ", info=" + info;
 	}
 
 }

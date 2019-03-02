@@ -12,8 +12,9 @@
 <title>Home</title>
 </head>
 <body>
-<div class="container">
 <%@include file="partials/header.jsp" %>
+<div class="container">
+
 	<h1 class="display-1">ticketmeister</h1>
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -49,7 +50,7 @@
 <table class="table">
 <thead class="thead-dark">
 <tr>
-<th>Name</th><th>Description</th><th>Url</th><th>Price</th><th>Favorite</th>
+<th>Name</th><th>Url</th><th>Price</th><th>Favorite</th>
 
 </tr>
 </thead>
@@ -65,7 +66,8 @@
 <button type="button" class="btn btn-link" onclick ="myFunction()">${show.name }</button>
 </td>
 
-<td>GENRE</td><td><a href="${show.url}" target="_blank">Link</a></td>
+
+<td><a href="${show.url}" target="_blank">Link</a></td>
 
 <td><c:forEach var="price" items="${show.priceRanges }"><fmt:formatNumber type="currency" value="${price.min } "/>
 &nbsp;-&nbsp;<fmt:formatNumber type="currency" value="${price.max } "/><br></c:forEach></td>

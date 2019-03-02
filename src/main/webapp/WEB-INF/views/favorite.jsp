@@ -11,8 +11,9 @@
 <title>Your Favorite</title>
 </head>
 <body>
-<div class="container">
 <%@include file="partials/header.jsp" %>
+<div class="container">
+
 	<h1>Favorites</h1>
 
 <table class="table">
