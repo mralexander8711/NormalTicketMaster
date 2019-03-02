@@ -29,5 +29,16 @@ public class ApiController {
 		ModelAndView mav = new ModelAndView("favorite");
 		return mav;
 	}
+	
+	//Test Bench Page for adding items.
+	@RequestMapping("/testApi")
+	public ModelAndView testApi() {
+
+		List<Events> shows = apiService.findAllEvents();
+
+		return new ModelAndView("testApi", "events", shows);
+
+	}
+	
 
 }

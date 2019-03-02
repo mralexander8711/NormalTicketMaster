@@ -13,6 +13,18 @@ public class Events {
 
 	private String info;
 
+	@JsonProperty("images")
+	List<Images> images;
+	
+	
+	public List<Images> getImages() {
+		return images;
+	}
+
+	public void setImages(List<Images> images) {
+		this.images = images;
+	}
+
 	@JsonProperty("priceRanges")
 	List<PriceRanges> priceRanges;
 
