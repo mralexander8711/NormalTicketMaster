@@ -14,16 +14,24 @@ public class ApiService {
 
 	@Value("${myapi.key}")
 	String myApiKey;
-	String query = "";
 
 	private RestTemplate restTemp = new RestTemplate();
 
 	public List<Events> findAllEvents() {
-		String url = "https://app.ticketmaster.com/discovery/v2/events.json?apikey=" + myApiKey;
+		String url = "https://app.ticketmaster.com/discovery/v2/events" + ".json?apikey=" + myApiKey;
 
 		EventResponse response = restTemp.getForObject(url, EventResponse.class);
 
 		return response.getEmbed().getEvents();
+	}
+
+	public Events findById(String query) {
+		String url = "https://app.ticketmaster.com/discovery/v2/events/" + query + ".json?apikey=" + myApiKey;
+
+		Events response2 = restTemp.getForObject(url, Events.class);
+
+		return response2;
+
 	}
 
 }

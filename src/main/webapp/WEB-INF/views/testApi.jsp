@@ -7,19 +7,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Testing The Api</title>
 </head>
 <body>
 
-<!-- Code that worked for pulling image links from API
 
-<p>Testing Image call.</p>
 <table>
-<thead>
 <tr>
 <th>Image Test</th>
 </tr>
-</thead>
 <c:forEach var="show" items="${events }">
 
 <c:forEach var="images" items="${show.images }">
@@ -30,17 +25,8 @@
 </c:forEach>
 
 </c:forEach>
-</table>
 
-  -->
-<!-- Code that worked for pulling Genre from the API
-<p>Testing Genre call.</p>
-<table>
-<thead>
-<tr>
-<th>Genre Test</th>
-</tr>
-</thead>
+
 <c:forEach var="show" items="${events }">
 
 <c:forEach var="classifications" items="${show.classifications }">
@@ -52,19 +38,7 @@
 
 </c:forEach>
 </c:forEach>
-</table>
 
-</body>
-</html>
- -->
- 
- <p>Testing Venue call.</p>
-<table>
-<thead>
-<tr>
-<th>Venue Test</th>
-</tr>
-</thead>
 <c:forEach var="show" items="${events }">
 
 <c:forEach var="venues" items ="${show.embedded2.venues }">
@@ -77,6 +51,7 @@
 </c:forEach>
 </c:forEach>
 </table>
+
 
 </body>
 </html>
