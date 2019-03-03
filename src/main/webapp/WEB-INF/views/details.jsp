@@ -15,40 +15,44 @@
 <title>Details</title>
 </head>
 <body>
-
-	<%@include file="partials/header.jsp"%>
-
-
-	<!-- The slideshow -->
-	<c:forEach var="i" begin="4" end="4" items="${show.images }">
-		<p style="text-align: center">
-			<img src="${i.url}" class="img" alt="Event Image">
-		</p>
-	</c:forEach>
-
-
-
-
 	<div class="container">
+		<%@include file="partials/header.jsp"%>
+
+
+		<c:forEach var="i" begin="4" end="4" items="${show.images }">
+			<p style="text-align: center">
+				<img src="${i.url}" class="img" alt="Event Image">
+			</p>
+		</c:forEach>
 
 
 
-		<table class="table">
-			<tr>
-				<th>Name</th>
-				<th>Description</th>
-				<th>Link</th>
-			</tr>
 
-			<tr>
-				<td>${show.name}</td>
-				<td>${show.info}</td>
-				<td><a href="${show.url}" target="_blank">Link</a></td>
+		<div class="container">
 
-			</tr>
-		</table>
 
+
+			<table class="table">
+				<tr>
+					<th>Name</th>
+					<th>Description</th>
+					<th>Venue</th>
+					<th>Link</th>
+				</tr>
+
+				<tr>
+					<td>${show.name}</td>
+					<td>${show.info}</td>
+					<td><c:forEach var="i" items="${show.embedded2.venues}">
+							${i.name }
+
+						</c:forEach></td>
+					<td><a href="${show.url}" target="_blank">Link</a></td>
+
+				</tr>
+			</table>
+
+		</div>
 	</div>
-
 </body>
 </html>
