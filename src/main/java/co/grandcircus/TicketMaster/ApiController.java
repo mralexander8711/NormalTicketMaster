@@ -27,8 +27,8 @@ public class ApiController {
 		return new ModelAndView("index", "events", shows);
 
 	}
-	@RequestMapping("/search/{keyword}")
-	public ModelAndView homeSearch(@PathVariable(value ="keyword", required = false) String keyword) {
+	@RequestMapping("/search")
+	public ModelAndView homeSearch(@RequestParam(name ="keyword", required = false) String keyword) {
 		List<Events> shows = apiService.findAllEvents(keyword);
 		return new ModelAndView("search","events",shows);
 	}
