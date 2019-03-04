@@ -21,53 +21,69 @@
 		
 
 		<h1 class="display-1">ticketmeister</h1>
+		
+		<!-- NEW -->
 
-		<div id="demo" class="carousel slide" data-ride="carousel">
-
-			<!-- Indicators -->
-			<ul class="carousel-indicators">
-				<li data-target="#demo" data-slide-to="0" class="active"></li>
-				<li data-target="#demo" data-slide-to="1"></li>
-				<li data-target="#demo" data-slide-to="2"></li>
-			</ul>
-
-			<!-- The slideshow -->
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img
-						src="https://s1.ticketm.net/dam/a/1dd/d5e86d93-5e1a-49d9-b530-70fefc0f21dd_877061_TABLET_LANDSCAPE_3_2.jpg"
-						alt="Los Angeles">
-				</div>
-				<div class="carousel-item">
-					<img
-						src="https://s1.ticketm.net/dam/a/433/7980a1b3-95ab-4b66-b793-4d0aa8dca433_655411_TABLET_LANDSCAPE_LARGE_16_9.jpg"
-						alt="Chicago">
-				</div>
-				<div class="carousel-item">
-					<img
-						src="https://s1.ticketm.net/dam/a/507/071f2b5a-e768-4315-8d45-120ad5d07507_444371_RETINA_LANDSCAPE_16_9.jpg"
-						alt="New York">
-				</div>
-				<div class="carousel-item">
-					<img
-						src="https://s1.ticketm.net/dam/a/d98/7feb06e4-0dab-4207-868b-d6e29285bd98_984001_RETINA_LANDSCAPE_16_9.jpg"
-						alt="New York">
-				</div>
-				<div class="carousel-item">
-					<img
-						src="https://s1.ticketm.net/dam/a/622/e77943be-4b22-4319-8993-dc9d5fc0c622_984531_TABLET_LANDSCAPE_16_9.jpg"
-						alt="New York">
-				</div>
-			</div>
-
-			<!-- Left and right controls -->
-			<a class="carousel-control-prev" href="#demo" data-slide="prev">
-				<span class="carousel-control-prev-icon"></span>
-			</a> <a class="carousel-control-next" href="#demo" data-slide="next">
-				<span class="carousel-control-next-icon"></span>
-			</a>
-
-		</div>
+		        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators-->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+            </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src=https://s1.ticketm.net/dam/a/d98/7feb06e4-0dab-4207-868b-d6e29285bd98_984001_RETINA_LANDSCAPE_16_9.jpg>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>MONSTER JAM</h5>
+                        <p>Sun • Mar 03 • 3:00 PM Sun Bowl Stadium, El Paso, TX</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src=https://s1.ticketm.net/dam/a/1dd/d5e86d93-5e1a-49d9-b530-70fefc0f21dd_877061_RETINA_LANDSCAPE_16_9.jpg>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>P!NK - Beautiful Trauma World Tour</h5>
+                        <p>Tue 25 Jun 2019 @ 5:30 pm | Anfield, Liverpool</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src=https://s1.ticketm.net/dam/a/433/7980a1b3-95ab-4b66-b793-4d0aa8dca433_655411_RETINA_LANDSCAPE_16_9.jpg>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>MEGA MEZCLA 2019</h5>
+                        <p>Sun • Apr 21 • 8:00 PM Prudential Center, Newark, NJ</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src=https://s1.ticketm.net/dam/a/300/88bcb3d0-aa78-428d-ad10-52514ea72300_570131_RETINA_LANDSCAPE_16_9.jpg>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>HAMILTON (Touring)</h5>
+                        <p>Tue • Apr 02 • 7:30 PM Music Hall At Fair Park, Dallas, TX</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src=https://s1.ticketm.net/dam/c/2f4/a86f0e97-a943-4a8a-8826-2eaea82e92f4_106291_RETINA_LANDSCAPE_16_9.jpg>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>PGA MASTERS TOUR</h5>
+                        <p>Mon-Sun• Apr 08- Apr 14 • Augusta, GA</p>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a> <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            </div>
+		<!-- OLD -->
 
 		<table class="table table-dark table-striped">
 			<thead class="thead-light">
