@@ -35,17 +35,27 @@
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<img
-						src="https://s1.ticketm.net/dam/a/507/071f2b5a-e768-4315-8d45-120ad5d07507_444371_RETINA_PORTRAIT_3_2.jpg"
+						src="https://s1.ticketm.net/dam/a/1dd/d5e86d93-5e1a-49d9-b530-70fefc0f21dd_877061_TABLET_LANDSCAPE_3_2.jpg"
 						alt="Los Angeles">
 				</div>
 				<div class="carousel-item">
 					<img
-						src="https://s1.ticketm.net/dam/a/db5/63ab9f87-9c85-444b-ad7e-1eb97aa4cdb5_980081_RETINA_PORTRAIT_3_2.jpg"
+						src="https://s1.ticketm.net/dam/a/433/7980a1b3-95ab-4b66-b793-4d0aa8dca433_655411_TABLET_LANDSCAPE_LARGE_16_9.jpg"
 						alt="Chicago">
 				</div>
 				<div class="carousel-item">
 					<img
-						src="https://s1.ticketm.net/dam/a/d98/7feb06e4-0dab-4207-868b-d6e29285bd98_984001_RETINA_PORTRAIT_3_2.jpg"
+						src="https://s1.ticketm.net/dam/a/507/071f2b5a-e768-4315-8d45-120ad5d07507_444371_RETINA_LANDSCAPE_16_9.jpg"
+						alt="New York">
+				</div>
+				<div class="carousel-item">
+					<img
+						src="https://s1.ticketm.net/dam/a/d98/7feb06e4-0dab-4207-868b-d6e29285bd98_984001_RETINA_LANDSCAPE_16_9.jpg"
+						alt="New York">
+				</div>
+				<div class="carousel-item">
+					<img
+						src="https://s1.ticketm.net/dam/a/622/e77943be-4b22-4319-8993-dc9d5fc0c622_984531_TABLET_LANDSCAPE_16_9.jpg"
 						alt="New York">
 				</div>
 			</div>
