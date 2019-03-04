@@ -33,5 +33,13 @@ public class ApiService {
 		return response2;
 
 	}
+//For Searching by keyword
+	public List<Events> findAllEvents(String keyword) {
+		String url = "https://app.ticketmaster.com/discovery/v2/events.json?keyword=" +keyword+ "&apikey=" + myApiKey;
 
+		EventResponse response = restTemp.getForObject(url, EventResponse.class);
+
+		return response.getEmbed().getEvents();
+	
+	}
 }
