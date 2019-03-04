@@ -5,7 +5,10 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.servlet.ModelAndView;
 
 import co.grandcircus.TicketMaster.model.Events;
@@ -23,6 +26,11 @@ public class ApiController {
 
 		return new ModelAndView("index", "events", shows);
 
+	}
+	@RequestMapping("/search/{keyword}")
+	public ModelAndView homeSearch(@PathVariable(value ="keyword", required = false) String keyword) {
+		List<Events> shows = apiService.findAllEvents(keyword);
+		return new ModelAndView("search","events",shows);
 	}
 
 	@RequestMapping("/fav")
@@ -45,8 +53,11 @@ public class ApiController {
 	public ModelAndView details(@PathVariable(value = "id", required = false) String id) {
 
 		Events event = apiService.findById(id);
-
+try {
 		return new ModelAndView("details", "show", event);
+}catch (HttpClientErrorException e){
+	throw new RuntimeException("Unable to retrieve details.");
+}
 	}
 
 }
