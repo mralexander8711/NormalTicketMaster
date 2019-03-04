@@ -15,11 +15,12 @@
 <title>Details</title>
 </head>
 <body>
+	<%@include file="partials/header.jsp"%>
 	<div class="container">
-		<%@include file="partials/header.jsp"%>
+	
 
 
-		<c:forEach var="i" begin="2" end="2" items="${show.images }">
+		<c:forEach var="i" begin="1" end="1" items="${show.images }">
 			<p style="text-align: center">
 				<img src="${i.url}" class="img" alt="Event Image">
 			</p>
@@ -27,18 +28,17 @@
 
 		<div class="container">
 
-
-
-			<table class="table">
+			<table class="table table-light">
+			<thead>
 				<tr>
-					<th>Name</th>
 					<th>Description</th>
-					<th>Venue</th>
-					<th>Link</th>
+					<th width="30%">Venue</th>
+					<th>URL</th>
 				</tr>
+				</thead>
+				<tbody>
 
 				<tr>
-					<td>${show.name}</td>
 					<td>${show.info}</td>
 					<td><c:forEach var="i" items="${show.embedded2.venues}">
 							${i.name }
@@ -47,6 +47,7 @@
 					<td><a href="${show.url}" target="_blank">Link</a></td>
 
 				</tr>
+				</tbody>
 			</table>
 
 		</div>

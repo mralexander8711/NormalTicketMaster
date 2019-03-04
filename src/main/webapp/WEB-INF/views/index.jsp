@@ -16,8 +16,9 @@
 </head>
 <body>
 
+<%@include file="partials/header.jsp"%>
 	<div class="container">
-		<%@include file="partials/header.jsp"%>
+		
 
 		<h1 class="display-1">ticketmeister</h1>
 
@@ -34,7 +35,7 @@
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<img
-						src="https://s1.ticketm.net/dam/a/021/705fdac6-22ce-441c-9f76-5bddf586b021_779401_RETINA_PORTRAIT_16_9.jpg"
+						src="https://s1.ticketm.net/dam/a/507/071f2b5a-e768-4315-8d45-120ad5d07507_444371_RETINA_PORTRAIT_3_2.jpg"
 						alt="Los Angeles">
 				</div>
 				<div class="carousel-item">
@@ -58,14 +59,14 @@
 
 		</div>
 
-		<table class="table">
-			<thead class="thead-dark">
+		<table class="table table-dark table-striped">
+			<thead class="thead-light">
 				<tr>
 					<th width="45%">Name</th>
-					<th  width="20%">Genre</th>
-					<th>Link</th>
+					<th width="20%">Genre</th>
+					<th width="10%">URL</th>
 					<th width="20%">Price</th>
-					<th>Favorite</th>
+					<th width="15%">Favorite</th>
 
 				</tr>
 			</thead>
