@@ -15,14 +15,33 @@
 <title>Search</title>
 </head>
 <body>
-<%@include file="partials/header.jsp"%>
+	<%@include file="partials/header.jsp"%>
 
-<div class="container">
-	<c:forEach var="show" items="${events }">
-${show.name }
+	<div class="container">
 
-</c:forEach>
-</div>
+		<table class="table table-dark table-striped">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Description</th>
+					<th>URL</th>
+				</tr>
+
+			</thead>
+			<tbody>
+
+				<c:forEach var="show" items="${events }">
+					<tr>
+						<td>${show.name }</td>
+						<td>${show.info }</td>
+						<td><a href="${show.url}" target="_blank">Link</a></td>
+					</tr>
+				</c:forEach>
+
+
+			</tbody>
+		</table>
+	</div>
 
 
 
