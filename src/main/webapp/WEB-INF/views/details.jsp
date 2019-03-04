@@ -19,14 +19,11 @@
 		<%@include file="partials/header.jsp"%>
 
 
-		<c:forEach var="i" begin="4" end="4" items="${show.images }">
+		<c:forEach var="i" begin="2" end="2" items="${show.images }">
 			<p style="text-align: center">
 				<img src="${i.url}" class="img" alt="Event Image">
 			</p>
 		</c:forEach>
-
-
-
 
 		<div class="container">
 

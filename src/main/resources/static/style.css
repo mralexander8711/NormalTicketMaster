@@ -26,13 +26,9 @@ div .table{
 	
 }
 
-div img.img {
-	max-width:50%;
-	min-width:50%;
+div img {
+	max-width:80%;
+	min-width:70%;
 }
 
-div img.sm{
-	max-width:33%;
-	min-width:33%;
-}
 

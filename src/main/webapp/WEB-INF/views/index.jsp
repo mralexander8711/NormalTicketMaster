@@ -15,29 +15,56 @@
 <title>Home</title>
 </head>
 <body>
-	<%@include file="partials/header.jsp"%>
+
 	<div class="container">
+		<%@include file="partials/header.jsp"%>
 
 		<h1 class="display-1">ticketmeister</h1>
 
-		<c:forEach var="show" items="${events }">
+		<div id="demo" class="carousel slide" data-ride="carousel">
 
-			<c:forEach var="i" begin="4" end="4" items="${show.images }">
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
 
-				<img src="${i.url}" class="sm" alt="Event Image">
+			<!-- The slideshow -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img
+						src="https://s1.ticketm.net/dam/a/021/705fdac6-22ce-441c-9f76-5bddf586b021_779401_RETINA_PORTRAIT_16_9.jpg"
+						alt="Los Angeles">
+				</div>
+				<div class="carousel-item">
+					<img
+						src="https://s1.ticketm.net/dam/a/db5/63ab9f87-9c85-444b-ad7e-1eb97aa4cdb5_980081_RETINA_PORTRAIT_3_2.jpg"
+						alt="Chicago">
+				</div>
+				<div class="carousel-item">
+					<img
+						src="https://s1.ticketm.net/dam/a/d98/7feb06e4-0dab-4207-868b-d6e29285bd98_984001_RETINA_PORTRAIT_3_2.jpg"
+						alt="New York">
+				</div>
+			</div>
 
-			</c:forEach>
-		</c:forEach>
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a> <a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
 
-
+		</div>
 
 		<table class="table">
 			<thead class="thead-dark">
 				<tr>
-					<th>Name</th>
-					<th>Genre</th>
+					<th width="45%">Name</th>
+					<th  width="20%">Genre</th>
 					<th>Link</th>
-					<th>Price</th>
+					<th width="20%">Price</th>
 					<th>Favorite</th>
 
 				</tr>
@@ -46,10 +73,10 @@
 				<c:forEach var="show" items="${events }">
 
 					<tr>
-						<td>${show.name }
+						<td>
 							<form method="get">
 
-								<a href="/details/${show.id}" type="submit">Details</a>
+								${show.name } <a href="/details/${show.id}" type="submit">Details</a>
 
 							</form>
 						</td>
@@ -94,7 +121,6 @@ ${classifications.genre.name}
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 		crossorigin="anonymous"></script>
 
-	<script src="script.js"></script>
 
 </body>
 </html>
