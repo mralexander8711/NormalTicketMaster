@@ -33,6 +33,7 @@
 				</a></li>
 			</ul>
 			<form action ="/search" class="form-inline my-2 my-lg-0">
+
 				<input name="keyword" class="form-control mr-sm-2" type="text"
 					placeholder="Keyword, Price ...">
 					
